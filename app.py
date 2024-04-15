@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, request
-from funcoes import maior_de_50, mais_2000, maior_salario
+from funcoes import maior_de_50, mais_2000, maior_salario, media_profissoes
 from randomdata import pessoas
 
 app = Flask(__name__)
@@ -37,7 +37,10 @@ def maior_recebimento():
     maior_recibo = maior_salario(pessoas)
     return jsonify({"Status":200, "mensage":maior_recibo})
 
-
+@app.route("/media_proficoes", methods = ["GET"])
+def media_trabalhos():
+    media_trampo = media_profissoes(pessoas)
+    return jsonify({"Status":200, "mensage":media_trampo})
 
 if __name__ == '__main__':
     app.run(debug=True)
