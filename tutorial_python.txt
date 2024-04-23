@@ -5,7 +5,7 @@ PASSOS PARA A INSTALAÇÃO:
 
 2. Execute o Instalador: Após baixar o arquivo de instalação, execute-o clicando duas vezes no arquivo baixado.
 
-CONFIGURAÇÕES DO INSTALADOR
+CONFIGURAÇÕES DO INSTALADOR:
 1. Configurações de Instalação: Siga as instruções do instalador. Você geralmente pode manter as configurações padrão, a menos que saiba que precisa personalizá-las.
 
 2. Adicione o Python ao PATH (para usuários do Windows): Durante a instalação, certifique-se de selecionar a opção "Add Python to PATH". Isso permite que você execute o Python facilmente a partir da linha de comando.
@@ -16,7 +16,7 @@ CONFIGURAÇÕES DO INSTALADOR
 
 5. Instale um Editor de Código (Opcional): Embora não seja estritamente necessário, é útil ter um editor de código para escrever e executar seus programas Python. Alguns populares incluem Visual Studio Code, PyCharm, e Sublime Text.
 
-COMO INSTALAR O VIRTUALENV
+COMO INSTALAR O VIRTUALENV:
 1. Instalar o Virtualenv:
    - Abra um terminal ou prompt de comando.
    - Se você ainda não tem o virtualenv instalado, pode instalá-lo usando o pip (que geralmente vem com a instalação do Python) com o seguinte comando:
@@ -42,5 +42,34 @@ COMO INSTALAR O VIRTUALENV
      source nome_do_seu_ambiente/bin/activate
      
    - Após executar este comando, você verá o nome do seu ambiente virtual aparecer no início da linha de comando, indicando que o ambiente virtual está ativo.
+
+
+INSTALAÇÃO DO FLASK:
+4. Instalar o Flask:
+   - Com o ambiente virtual ativado, você pode instalar o Flask usando o pip:
+     
+     pip install flask
+     
+
+5. Verificar a Instalação:
+   - Você pode verificar se o Flask foi instalado corretamente executando:
+     
+     flask --version
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
