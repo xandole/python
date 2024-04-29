@@ -1,0 +1,35 @@
+Quando colocamos nossos projetos em servidores como o GITHUB, temos uma segurança maior
+por podermos ter uma maior facilidade de fazer backup dele
+
+E para fazer isso precisamos seguir os seguintes passos: 
+
+1. Crie um repositório no GitHub (ou em outro serviço de hospedagem de Git)
+   - Vá para o site do GitHub e clique em "New repository".
+   - Dê um nome ao seu repositório e clique em "Create repository".
+
+2. Abra o terminal (ou prompt de comando)
+   - Navegue até o diretório do seu projeto usando o comando cd.
+
+3. Inicialize o repositório Git local, se ainda não tiver sido feito
+   - Use o comando git init para inicializar o repositório Git localmente.
+
+4. Adicione os arquivos ao repositório local
+   - Use o comando git add . para adicionar todos os arquivos ao commit.
+
+5. Faça o commit das alterações
+   - Use o comando git commit -m "mensagem do commit" para confirmar as alterações.
+
+6. Conecte o repositório local ao remoto (GitHub)
+   - Copie o URL do repositório remoto do GitHub.
+   - Use o comando git remote add origin URL_do_repositório para conectar o repositório local ao remoto.
+
+7. Verifique a conexão
+   - Use o comando git remote -v para verificar se a conexão foi estabelecida corretamente.
+
+8. Envie as alterações para o repositório remoto
+   - Use o comando git push -u origin master para enviar as alterações locais para o repositório remoto no branch master.
+   - Se você estiver usando um branch diferente, substitua master pelo nome do seu branch.
+
+Agora seu repositório local está sincronizado com o repositório remoto no GitHub
+(ou em outro serviço). Você pode usar git push para enviar novas alterações e git
+pull para receber alterações feitas por outros colaboradores.
