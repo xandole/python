@@ -1,4 +1,4 @@
-from flask import Blueprint, jsonify
+from flask import Blueprint, jsonify, request
 from funcoes import maior_de_50, mais_2000, maior_salario, media_profissoes, maior_2000_sexo
 from randomdata import pessoas
 
