@@ -1,5 +1,13 @@
-from flask import Flask, jsonify, request
-from funcoes import maior_de_50, mais_2000, maior_salario, media_profissoes, maior_2000_sexo
-from randomdata import pessoas
+from flask import Flask, render_template
 
 app = Flask(__name__)
+
+@app.route("/")
+def index():
+    return render_template("index.html")
+
+from api import bp 
+app.register_blueprint(bp)
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0")
